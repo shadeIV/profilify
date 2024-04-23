@@ -73,7 +73,7 @@ body {
     border-radius: 5px;
     font-size: 15px;
     background-color: #111214;
-     border: rgb(53, 53, 53) solid 1px;
+    border: rgb(53, 53, 53) solid 1px;
     color: white;
 }
 
@@ -84,7 +84,7 @@ body {
     border-radius: 5px;
     font-size: 15px;
     background-color: #111214;
-     border: rgb(53, 53, 53) solid 1px;
+    border: rgb(53, 53, 53) solid 1px;
     color: white;
     resize: none;
 }
@@ -106,4 +106,126 @@ body {
     cursor: pointer;
     color: white;
     background-color: rgb(49, 240, 49);
+}
+
+@media (max-width: 750px) {
+    .create-section-div {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 610px) {
+    body {
+        background-color: #232428;
+    }
+
+    .create-section-div {
+        padding: 20px 0px;
+        flex: 1;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .submit-button-div {
+        width: 420px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input,
+    .profile-background-input {
+        width: 398px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .submit-button-div {
+        width: 390px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input,
+    .profile-background-input {
+        width: 368px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .submit-button-div {
+        width: 370px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input,
+    .profile-background-input {
+        width: 348px;
+    }
+
+}
+
+@media (max-width: 415px) {
+
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .submit-button-div {
+        width: 350px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input,
+    .profile-background-input {
+        width: 328px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .submit-button-div {
+        width: 330px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input,
+    .profile-background-input {
+        width: 308px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .submit-button-div {
+        width: 310px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input,
+    .profile-background-input {
+        width: 288px;
+    }
 }

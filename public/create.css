@@ -3,7 +3,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    background-color: white;
+    background-color: #313338;
 }
 
 .create-section-div {
@@ -11,12 +11,12 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 20px;
     width: 550px;
     margin-top: 80px;
     border-radius: 6px;
-    border: rgb(161, 161, 161) solid 1px;
+    background-color: #232428;
 }
 
 .profile-name-input {
@@ -24,12 +24,18 @@ body {
     width: 500px;
     height: 40px;
     font-size: 33px;
+    background-color: transparent;
+    color: white;
+}
+
+.profile-name-input::placeholder {
+    color: white;
 }
 
 .create-section-hr {
     width: 500px;
     height: 1px;
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(53, 53, 53);
 }
 
 .profile-input-div {
@@ -42,7 +48,8 @@ body {
 }
 
 .input-name-p {
-    color: #747474;
+    margin-left: 2px;
+    color: white;
     font-size: 16px;
 }
 
@@ -54,7 +61,9 @@ body {
     height: 30px;
     border-radius: 5px;
     font-size: 15px;
-    border: rgb(161, 161, 161) solid 1px;
+    background-color: #111214;
+    border: rgb(53, 53, 53) solid 1px;
+    color: white
 }
 
 .profile-nick-input {
@@ -63,7 +72,9 @@ body {
     height: 30px;
     border-radius: 5px;
     font-size: 15px;
-    border: rgb(161, 161, 161) solid 1px;
+    background-color: #111214;
+     border: rgb(53, 53, 53) solid 1px;
+    color: white;
 }
 
 .profile-description-input {
@@ -72,7 +83,9 @@ body {
     height: 200px;
     border-radius: 5px;
     font-size: 15px;
-    border: rgb(161, 161, 161) solid 1px;
+    background-color: #111214;
+     border: rgb(53, 53, 53) solid 1px;
+    color: white;
     resize: none;
 }
 
@@ -86,7 +99,7 @@ body {
 }
 
 .submit-button {
-    width: 70px;
+    width: 80px;
     height: 30px;
     border-radius: 5px;
     font-size: 18px;

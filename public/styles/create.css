@@ -28,6 +28,11 @@ body {
     color: white;
 }
 
+.error-p {
+    color: red;
+    font-size: 13px;
+}
+
 .profile-name-input::placeholder {
     color: white;
 }

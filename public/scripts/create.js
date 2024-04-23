@@ -13,28 +13,38 @@ submitButton.addEventListener("click", () => {
 
     // Checking If There Is A Empty Input
     if (profileName && profileBanner && profilePicture && profileBackground && profileNick && profileDescription) {
+        const newProfile = {
+            profileName,
+            profileBanner,
+            profilePicture,
+            profileBackground,
+            profileNick,
+            profileDescription
+        };
 
-        // Checking If There Is A Profile With The Same Name
-        let matchedProfile = false;
-        getStorage();
-        storage.forEach((profile) => {
-            if (profile.profileName == profileName) {
-                matchedProfile = true;
-            }
-        });
-
-        if (!matchedProfile) {
-            const newProfile = {
-                profileName,
-                profileBanner,
-                profilePicture,
-                profileBackground,
-                profileNick,
-                profileDescription
-            };
-
-            saveToStorage(newProfile);
-        } else { alert("There Is A Profile With The Same Name!") }
+        saveToStorage(newProfile);
 
     };
+});
+
+// Profile Name Input
+document.querySelector(".profile-name-input").addEventListener("keyup", () => {
+    const profileName = document.querySelector(".profile-name-input").value;
+
+    let matchedProfile = false;
+    getStorage();
+    storage.forEach((profile) => {
+        if (profile.profileName == profileName) {
+            matchedProfile = true;
+        }
+    });
+
+    if (matchedProfile){
+        submitButton.disabled = true;
+        document.querySelector(".error-p").innerText = `There is an existing profile with the name of "${profileName}"`;
+    } else { 
+        submitButton.disabled = false
+        document.querySelector(".error-p").innerText = "";
+    };
+    
 });

@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    width: 400px;
+    border-radius: 7px;
+    border: #232428 solid 5px;
+    background-color: #232428;
+}
+
+.banner-image {
+    width: 400px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.profile-picture-image {
+    position: absolute;
+    top: 70px;
+    left: 148px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: #232428 solid 2px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-bottom-section {
+    margin-top: 40px;
+    padding: 10px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 7px;
+    background-color: #111214;
+}
+
+.nick-p {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.profile-hr {
+    margin-top: 7px;
+    width: 330px;
+    height: 1px;
+    background-color: rgb(53, 53, 53);
+}
+
+.about-me-p {
+    margin-top: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.description-p {
+    margin-top: 5px;
+    width: 330px;
+    max-height: 300px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}

@@ -2,6 +2,9 @@
 const express = require("express");
 const app = express();
 
+// Public Files
+app.use(express.static("public"));
+
 // View Engine
 app.set("view engine", "ejs");
 

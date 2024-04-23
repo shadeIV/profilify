@@ -1,0 +1,19 @@
+{
+  "name": "profilify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./scripts/server.js",
+  "scripts": {
+    "start": "node ./scripts/server.js",
+    "devStart": "nodemon server.js"
+  },
+  "author": "shade",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

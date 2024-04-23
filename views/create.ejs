@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,37 @@
 
     <title>Profilify | Create</title>
 </head>
+
 <body>
-    
+    <form class="create-section-div" action="">
+        <input class="profile-name-input" type="text" name="profileName" placeholder="Profile Name" maxlength="20"
+            required>
+        <hr class="create-section-hr">
+        <div class="profile-input-div">
+            <p class="input-name-p">Profile Banner Link</p>
+            <input class="profile-banner-input" type="text" name="profileBanner" required>
+        </div>
+        <div class="profile-input-div">
+            <p class="input-name-p">Profile Picture Link</p>
+            <input class="profile-picture-input" type="text" name="profilePicture" required>
+        </div>
+        <div class="profile-input-div">
+            <p class="input-name-p">Profile Background Link</p>
+            <input class="profile-background-input" type="text" name="profileBackground" required>
+        </div>
+        <div class="profile-input-div">
+            <p class="input-name-p">Nick</p>
+            <input class="profile-nick-input" type="text" name="profileNick" maxlength="20" required>
+        </div>
+        <div class="profile-input-div">
+            <p class="input-name-p">Description</p>
+            <textarea class="profile-description-input" type="text" name="profileDescription" maxlength="250"
+                required></textarea>
+        </div>
+        <div class="submit-button-div">
+            <button class="submit-button" type="submit" title="Create The Profile">Create</button>
+        </div>
+    </form>
 </body>
+
 </html>

@@ -10,6 +10,9 @@ submitButton.addEventListener("click", () => {
     const profileBackground = document.querySelector(".profile-background-input").value;
     const profileNick = document.querySelector(".profile-nick-input").value;
     const profileDescription = document.querySelector(".profile-description-input").value;
+    const profileColor = document.querySelector(".profile-color").value;
+    const textColor = document.querySelector(".text-color").value;
+    const borderColor = document.querySelector(".border-color").value;
 
     // Checking If There Is A Empty Input
     if (profileName && profileBanner && profilePicture && profileBackground && profileNick && profileDescription) {
@@ -19,7 +22,10 @@ submitButton.addEventListener("click", () => {
             profilePicture,
             profileBackground,
             profileNick,
-            profileDescription
+            profileDescription,
+            profileColor,
+            textColor,
+            borderColor
         };
 
         saveToStorage(newProfile);

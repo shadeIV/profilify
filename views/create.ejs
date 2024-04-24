@@ -16,9 +16,10 @@
 <body>
     <form class="create-section-div" action="">
         <div class="profile-name-div">
-            <input class="profile-name-input" type="text" name="profileName" placeholder="Profile Name" maxlength="20" required>
+            <input class="profile-name-input" type="text" name="profileName" placeholder="Profile Name" maxlength="20"
+                required>
             <p class="error-p"></p>
-        </div> 
+        </div>
         <hr class="create-section-hr">
         <div class="profile-input-div">
             <p class="input-name-p">Profile Banner Link</p>
@@ -40,6 +41,20 @@
             <p class="input-name-p">Description</p>
             <textarea class="profile-description-input" type="text" name="profileDescription" maxlength="250"
                 required></textarea>
+        </div>
+        <div class="color-pick-section">
+            <div class="color-input-div">
+                <p class="input-name-p">Profile Color</p>
+                <input class="profile-color color-input" type="color" name="profileColor" required value="#111214">
+            </div>
+            <div class="color-input-div">
+                <p class="input-name-p">Text Color</p>
+                <input class="text-color color-input" type="color" name="textColor" required value="#ffffff">
+            </div>
+            <div class="color-input-div">
+                <p class="input-name-p">Border Color</p>
+                <input class="border-color color-input" type="color" name="borderColor" required value="#111214">
+            </div>
         </div>
         <div class="submit-button-div">
             <button class="submit-button" type="submit" title="Create The Profile">Create</button>

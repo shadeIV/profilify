@@ -25,6 +25,11 @@ app.set("view engine", "ejs");
 // <----- Routers ----->
 
 
+// Home Route
+app.get("/home", (req, res) => {
+    res.render("home.ejs");
+});
+
 // View Route
 app.get("/view/:profileName", (req, res) => {
     res.render("view.ejs");

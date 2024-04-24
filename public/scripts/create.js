@@ -9,19 +9,21 @@ submitButton.addEventListener("click", () => {
     const profilePicture = document.querySelector(".profile-picture-input").value;
     const profileBackground = document.querySelector(".profile-background-input").value;
     const profileNick = document.querySelector(".profile-nick-input").value;
+    const profileRealName = document.querySelector(".profile-realname-input").value;
     const profileDescription = document.querySelector(".profile-description-input").value;
     const profileColor = document.querySelector(".profile-color").value;
     const textColor = document.querySelector(".text-color").value;
     const borderColor = document.querySelector(".border-color").value;
 
     // Checking If There Is A Empty Input
-    if (profileName && profileBanner && profilePicture && profileBackground && profileNick && profileDescription) {
+    if (profileName && profileBanner && profilePicture && profileBackground && profileNick && profileRealName && profileDescription) {
         const newProfile = {
             profileName,
             profileBanner,
             profilePicture,
             profileBackground,
             profileNick,
+            profileRealName,
             profileDescription,
             profileColor,
             textColor,
@@ -45,12 +47,12 @@ document.querySelector(".profile-name-input").addEventListener("keyup", () => {
         }
     });
 
-    if (matchedProfile){
+    if (matchedProfile) {
         submitButton.disabled = true;
         document.querySelector(".error-p").innerText = `There is an existing profile with the name of "${profileName}"`;
-    } else { 
+    } else {
         submitButton.disabled = false
         document.querySelector(".error-p").innerText = "";
     };
-    
+
 });

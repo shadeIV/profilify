@@ -13,23 +13,24 @@ const profileName = res[position + 1];
 getStorage();
 let matchingProfile;
 storage.forEach((profile) => {
-    if (profile.profileName === profileName){
+    if (profile.profileName === profileName) {
         matchingProfile = profile;
     }
 });
 
 // Rendering Part
-if (matchingProfile){
+if (matchingProfile) {
 
     document.querySelector(".banner-image").src = `${matchingProfile.profileBanner}`;
     document.querySelector(".profile-picture-image").src = `${matchingProfile.profilePicture}`;
     document.querySelector("body").style.backgroundColor = `${matchingProfile.profileBackground}`;
 
     document.querySelector(".nick-p").innerText = `${matchingProfile.profileNick}`;
+    document.querySelector(".realName-p").innerText = `/ ${matchingProfile.profileRealName}`;
     document.querySelector(".description-p").innerText = `${matchingProfile.profileDescription}`;
 
     document.querySelector(".profile-div").style.backgroundColor = `${matchingProfile.profileColor}`;
     document.querySelector("p").style.color = `${matchingProfile.textColor}`;
     document.querySelector(".profile-div").style.borderColor = `${matchingProfile.borderColor}`;
-    
+
 }

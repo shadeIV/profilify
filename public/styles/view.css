@@ -54,10 +54,24 @@ body {
     background-color: #111214;
 }
 
+.name-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 5px;
+}
+
 .nick-p {
     color: white;
     font-size: 22px;
     font-weight: 500;
+}
+
+.realName-p {
+    color: rgb(53, 53, 53);
+    font-size: 22px;
+    font-weight: 300;
 }
 
 .profile-hr {

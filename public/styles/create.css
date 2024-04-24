@@ -59,8 +59,7 @@ body {
 }
 
 .profile-banner-input,
-.profile-picture-input,
-.profile-background-input {
+.profile-picture-input {
     padding: 0px 10px;
     width: 478px;
     height: 30px;
@@ -102,7 +101,7 @@ body {
     width: 500px;
 }
 
-.color-input-div{
+.color-input-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -167,8 +166,7 @@ body {
 
     .profile-banner-input,
     .profile-picture-input,
-    .profile-description-input,
-    .profile-background-input {
+    .profile-description-input {
         width: 398px;
     }
 
@@ -189,8 +187,7 @@ body {
 
     .profile-banner-input,
     .profile-picture-input,
-    .profile-description-input,
-    .profile-background-input {
+    .profile-description-input {
         width: 368px;
     }
 
@@ -211,8 +208,7 @@ body {
 
     .profile-banner-input,
     .profile-picture-input,
-    .profile-description-input,
-    .profile-background-input {
+    .profile-description-input {
         width: 348px;
     }
 
@@ -234,8 +230,7 @@ body {
 
     .profile-banner-input,
     .profile-picture-input,
-    .profile-description-input,
-    .profile-background-input {
+    .profile-description-input {
         width: 328px;
     }
 
@@ -263,8 +258,7 @@ body {
 
     .profile-banner-input,
     .profile-picture-input,
-    .profile-description-input,
-    .profile-background-input {
+    .profile-description-input {
         width: 308px;
     }
 
@@ -282,8 +276,7 @@ body {
 
     .profile-banner-input,
     .profile-picture-input,
-    .profile-description-input,
-    .profile-background-input {
+    .profile-description-input {
         width: 288px;
     }
 }

@@ -23,7 +23,7 @@ if (matchingProfile){
 
     document.querySelector(".banner-image").src = `${matchingProfile.profileBanner}`;
     document.querySelector(".profile-picture-image").src = `${matchingProfile.profilePicture}`;
-    document.querySelector("body").style.backgroundImage = `url("${matchingProfile.profileBackground}")`;
+    document.querySelector("body").style.backgroundColor = `${matchingProfile.profileBackground}`;
 
     document.querySelector(".nick-p").innerText = `${matchingProfile.profileNick}`;
     document.querySelector(".description-p").innerText = `${matchingProfile.profileDescription}`;

@@ -7,6 +7,7 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: black;
+    padding-bottom: 20px;
 }
 
 .main-div {
@@ -70,7 +71,7 @@ body {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    row-gap: 20px;
+    row-gap: 30px;
     column-gap: 50px;
 }
 
@@ -103,4 +104,74 @@ body {
 .profile-name {
     color: white;
     font-size: 22px;
+}
+
+@media (max-width: 770px) {
+    .header-h1 {
+        width: 500px;
+        text-align: left;
+    }
+    .description-p {
+        width: 500px;
+    }
+    .main-hr {
+        width: 500px;
+    }
+    .profile-menu {
+        width: 500px;
+    }
+    .profiles {
+        width: 500px;
+        grid-template-columns: 150px 150px 150px;
+        column-gap: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-h1 {
+        font-size: 100px;
+        width: 400px;
+    }
+    .description-p {
+        font-size: 16px;
+        width: 400px;
+    }
+    .main-hr {
+        width: 400px;
+    }
+    .profile-menu {
+        width: 400px;
+    }
+    .profiles {
+        width: 400px;
+        grid-template-columns: 170px 170px;
+        column-gap: 60px;
+    }
+}
+
+@media (max-width: 475px) {
+    .main-div {
+        padding-top: 40px;
+    }
+    .profile-h1 {
+        font-size: 20px;
+    }
+    .header-h1 {
+        font-size: 70px;
+        width: 300px;
+    }
+    .description-p {
+        font-size: 14px;
+        width: 300px;
+    }
+    .main-hr {
+        width: 300px;
+    }
+    .profile-menu {
+        width: 300px;
+    }
+    .profiles {
+        width: 300px;
+        grid-template-columns: 300px;
+    }
 }

@@ -5,7 +5,7 @@ import { storage, getStorage, saveToStorage } from "./storage.js";
 const url = window.location.href;
 const res = url.split("/");
 const position = res.indexOf("view");
-const profileName = res[position + 1];
+const profileId = res[position + 1];
 
 // <----- Rendering Profile -----> 
 
@@ -13,7 +13,7 @@ const profileName = res[position + 1];
 getStorage();
 let matchingProfile;
 storage.forEach((profile) => {
-    if (profile.profileName === profileName) {
+    if (profile.profileId === profileId) {
         matchingProfile = profile;
     }
 });

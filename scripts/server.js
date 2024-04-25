@@ -31,20 +31,13 @@ app.get("/home", (req, res) => {
 });
 
 // View Route
-app.get("/view/:profileName", (req, res) => {
+app.get("/view/:profileId", (req, res) => {
     res.render("view.ejs");
 });
 
 // Create Route
 app.get("/create", (req, res) => {
     res.render("create.ejs");
-});
-
-// Handling Post Request From /create 
-app.post("/create", (req, res) => {
-    const profileName = req.body.profileName;
-
-    res.redirect(`/view/${profileName}`);
 });
 
 

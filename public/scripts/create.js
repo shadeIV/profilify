@@ -1,9 +1,13 @@
 // Importing Storage Functions
 import { storage, getStorage, saveToStorage } from "./storage.js";
 
+// Importing Extra Functions
+import { generateRandomId } from "./extra.js";
+
 // Submit Button
 const submitButton = document.querySelector(".submit-button");
 submitButton.addEventListener("click", () => {
+
     const profileName = document.querySelector(".profile-name-input").value;
     const profileBanner = document.querySelector(".profile-banner-input").value;
     const profilePicture = document.querySelector(".profile-picture-input").value;
@@ -17,6 +21,7 @@ submitButton.addEventListener("click", () => {
 
     // Checking If There Is A Empty Input
     if (profileName && profileBanner && profilePicture && profileBackground && profileNick && profileRealName && profileDescription) {
+        const newId = generateRandomId();
         const newProfile = {
             profileName,
             profileBanner,
@@ -27,32 +32,15 @@ submitButton.addEventListener("click", () => {
             profileDescription,
             profileColor,
             textColor,
-            borderColor
+            borderColor,
+            profileId: newId
         };
 
         saveToStorage(newProfile);
 
+        const currentURL = window.location.href;
+        const splitedURL = currentURL.split("/");
+        const newURL = `${splitedURL[0]}/view/${newId}`;
+        window.location.href = newURL;
     };
-});
-
-// Profile Name Input
-document.querySelector(".profile-name-input").addEventListener("keyup", () => {
-    const profileName = document.querySelector(".profile-name-input").value;
-
-    let matchedProfile = false;
-    getStorage();
-    storage.forEach((profile) => {
-        if (profile.profileName == profileName) {
-            matchedProfile = true;
-        }
-    });
-
-    if (matchedProfile) {
-        submitButton.disabled = true;
-        document.querySelector(".error-p").innerText = `There is an existing profile with the name of "${profileName}"`;
-    } else {
-        submitButton.disabled = false
-        document.querySelector(".error-p").innerText = "";
-    };
-
 });

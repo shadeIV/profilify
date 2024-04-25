@@ -7,7 +7,7 @@ let htmlCode = "";
 getStorage();
 storage.forEach((profile) => {
     htmlCode += `
-    <a href="/view/${profile.profileName}">
+    <a href="/view/${profile.profileId}">
         <div class="profile-div">
             <img class="profile-image" src="${profile.profilePicture}">
             <p class="profile-name">${profile.profileName}</p>

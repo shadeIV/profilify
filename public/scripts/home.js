@@ -16,4 +16,6 @@ storage.forEach((profile) => {
     `;
 });
 
-document.querySelector(".profiles").innerHTML = htmlCode;
+if (htmlCode) {
+    document.querySelector(".profiles").innerHTML = htmlCode;
+} else if (htmlCode == "") { document.querySelector(".profiles").innerHTML = '<p class="no-profile-p">No Profiles Created...</p>' }

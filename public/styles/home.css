@@ -75,6 +75,11 @@ body {
     column-gap: 50px;
 }
 
+.no-profile-p {
+    font-size: 18px; 
+    color: #7D7D7D;
+}
+
 .profile-div {
     display: flex;
     flex-direction: column;

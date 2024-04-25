@@ -42,5 +42,8 @@ submitButton.addEventListener("click", () => {
         const splitedURL = currentURL.split("/");
         const newURL = `${splitedURL[0]}/view/${newId}`;
         window.location.href = newURL;
-    };
+
+        document.querySelector(".error-p").innerText = "";
+        
+    } else { document.querySelector(".error-p").innerText = "Please Fill in All Blanks"; };
 });

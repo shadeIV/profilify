@@ -31,6 +31,8 @@ body {
 .error-p {
     color: red;
     font-size: 13px;
+    width: 500px;
+    text-align: left;
 }
 
 .profile-name-input::placeholder {
@@ -188,6 +190,7 @@ body {
         width: 420px;
     }
 
+    .error-p,
     .profile-banner-input,
     .profile-picture-input,
     .profile-description-input {
@@ -201,6 +204,7 @@ body {
 
 @media (max-width: 480px) {
 
+    .error-p,
     .profile-name-input,
     .create-section-hr,
     .profile-input-div,
@@ -222,6 +226,7 @@ body {
 
 @media (max-width: 440px) {
 
+    .error-p,
     .profile-name-input,
     .create-section-hr,
     .profile-input-div,
@@ -244,6 +249,7 @@ body {
 
 @media (max-width: 415px) {
 
+    .error-p,
     .profile-name-input,
     .create-section-hr,
     .profile-input-div,
@@ -272,6 +278,7 @@ body {
 
 @media (max-width: 400px) {
 
+    .error-p,
     .profile-name-input,
     .create-section-hr,
     .profile-input-div,
@@ -290,6 +297,7 @@ body {
 
 @media (max-width: 375px) {
 
+    .error-p,
     .profile-name-input,
     .create-section-hr,
     .profile-input-div,

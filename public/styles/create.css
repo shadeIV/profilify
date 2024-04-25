@@ -119,13 +119,34 @@ body {
     background-color: black;
 }
 
-.submit-button-div {
+.footer-buttons-div {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 500px;
     margin-top: 10px;
+}
+
+.home-link {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 5px;
+    padding: 0px 10px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    border: solid 2px rgb(53, 53, 53);
+    text-decoration: none;
+}
+
+#back-icon {
+    font-size: 20px;
 }
 
 .submit-button {

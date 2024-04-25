@@ -54,7 +54,7 @@ body {
 }
 
 .create-button {
-    width: 140px;
+    padding: 0px 10px;
     height: 30px;
     color: white;
     font-size: 18px;
@@ -87,7 +87,7 @@ body {
 }
 
 .profile-div:hover {
-    background-color: rgb(15, 15, 15);
+    background-color: #0e0e0e;
 }
 
 .profile-image {
@@ -103,16 +103,4 @@ body {
 .profile-name {
     color: white;
     font-size: 22px;
-}
-
-.edit-profile {
-    width: 140px;
-    height: 30px;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: black;
-    border: solid 2px rgba(37, 255, 37, 0.836);
 }

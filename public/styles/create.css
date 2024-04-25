@@ -130,7 +130,7 @@ body {
 
 .home-link {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     gap: 5px;
     padding: 0px 10px;
@@ -184,7 +184,7 @@ body {
     .create-section-hr,
     .profile-input-div,
     .color-pick-section,
-    .submit-button-div {
+    .footer-buttons-div {
         width: 420px;
     }
 
@@ -205,7 +205,7 @@ body {
     .create-section-hr,
     .profile-input-div,
     .color-pick-section,
-    .submit-button-div {
+    .footer-buttons-div {
         width: 390px;
     }
 
@@ -226,7 +226,7 @@ body {
     .create-section-hr,
     .profile-input-div,
     .color-pick-section,
-    .submit-button-div {
+    .footer-buttons-div {
         width: 370px;
     }
 
@@ -248,7 +248,7 @@ body {
     .create-section-hr,
     .profile-input-div,
     .color-pick-section,
-    .submit-button-div {
+    .footer-buttons-div {
         width: 350px;
     }
 
@@ -276,7 +276,7 @@ body {
     .create-section-hr,
     .profile-input-div,
     .color-pick-section,
-    .submit-button-div {
+    .footer-buttons-div {
         width: 330px;
     }
 
@@ -294,7 +294,7 @@ body {
     .create-section-hr,
     .profile-input-div,
     .color-pick-section,
-    .submit-button-div {
+    .footer-buttons-div {
         width: 310px;
     }
 

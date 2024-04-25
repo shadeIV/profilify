@@ -1,8 +1,12 @@
+* {
+    user-select: none;
+}
+
 body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #313338;
+    background-color: black;
 }
 
 .main-div {
@@ -15,27 +19,55 @@ body {
 
 .header-h1 {
     color: white;
-    font-size: 100px;
-    font-weight: 500;
+    font-size: 120px;
+    font-weight: 600;
 }
 
 .description-p {
     margin-top: 20px;
     width: 700px;
-    color: white;
-    font-size: 18px;
+    color: #7D7D7D;
+    font-size: 17px;
 }
 
 .main-hr {
     margin-top: 20px;
-    background-color: white;
+    background-color: #7D7D7D;
     width: 700px;
     height: 1px;
 }
 
+.profile-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 700px;
+}
+
+.profile-h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.create-button {
+    width: 140px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    border: solid 2px rgba(37, 255, 37, 0.836);
+}
+
 .profiles {
     width: 700px;
-    margin-top: 40px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 200px 200px 200px;
     row-gap: 20px;
@@ -45,12 +77,17 @@ body {
 .profile-div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 170px;
+    padding: 20px;
     gap: 10px;
     border-radius: 5px;
     border: white solid 1px;
+    background-color: black;
+}
+
+.profile-div:hover {
+    background-color: rgb(15, 15, 15);
 }
 
 .profile-image {
@@ -66,4 +103,16 @@ body {
 .profile-name {
     color: white;
     font-size: 22px;
+}
+
+.edit-profile {
+    width: 140px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    border: solid 2px rgba(37, 255, 37, 0.836);
 }

@@ -1,13 +1,15 @@
 // Importing Storage Functions
 import { storage, getStorage, saveToStorage } from "./storage.js";
 
+
+// <----- Rendering Profile -----> 
+
+
 // Getting The Profile Name From The URL
 const url = window.location.href;
 const res = url.split("/");
 const position = res.indexOf("view");
 const profileId = res[position + 1];
-
-// <----- Rendering Profile -----> 
 
 // Getting Profile
 getStorage();
@@ -28,6 +30,7 @@ if (matchingProfile) {
     document.querySelector(".nick-p").innerText = `${matchingProfile.profileNick}`;
     document.querySelector(".realName-p").innerText = `/ ${matchingProfile.profileRealName}`;
     document.querySelector(".description-p").innerText = `${matchingProfile.profileDescription}`;
+    document.querySelector(".date-p").innerText = `Creation Time : ${matchingProfile.profileDate}`;
 
     document.querySelector(".profile-div").style.backgroundColor = `${matchingProfile.profileColor}`;
     document.querySelector("p").style.color = `${matchingProfile.textColor}`;

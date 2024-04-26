@@ -97,3 +97,10 @@ body {
     font-weight: 300;
     line-height: 17px;
 }
+
+.date-p {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}

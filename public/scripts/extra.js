@@ -7,3 +7,16 @@ export function generateRandomId() {
     }
     return id;
 };
+
+// Getting Date
+export function getDate() {
+    var currentDate = new Date();
+
+    var day = currentDate.getDate();
+    var month = currentDate.getMonth() + 1;
+    var year = currentDate.getFullYear();
+
+    var formattedDateTime = `${day}/${month}/${year}`;
+
+    return formattedDateTime;
+};

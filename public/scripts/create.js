@@ -2,7 +2,7 @@
 import { storage, getStorage, saveToStorage } from "./storage.js";
 
 // Importing Extra Functions
-import { generateRandomId } from "./extra.js";
+import { generateRandomId, getDate } from "./extra.js";
 
 // Submit Button
 const submitButton = document.querySelector(".submit-button");
@@ -21,6 +21,7 @@ submitButton.addEventListener("click", () => {
 
     // Checking If There Is A Empty Input
     if (profileName && profileBanner && profilePicture && profileBackground && profileNick && profileRealName && profileDescription) {
+        const currentDate = getDate();
         const newId = generateRandomId();
         const newProfile = {
             profileName,
@@ -33,7 +34,8 @@ submitButton.addEventListener("click", () => {
             profileColor,
             textColor,
             borderColor,
-            profileId: newId
+            profileId: newId,
+            profileDate: currentDate
         };
 
         saveToStorage(newProfile);

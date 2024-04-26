@@ -104,3 +104,132 @@ body {
     font-size: 14px;
     margin-top: 10px;
 }
+
+@media (max-width: 420px) {
+    .profile-div {
+        width: 350px;
+    }
+
+    .banner-image {
+        width: 350px;
+    }
+
+    .profile-picture-image {
+        left: 123px;
+    }
+
+    .profile-bottom-section {
+        width: 300px;
+    }
+
+    .nick-p {
+        font-size: 19px;
+    }
+
+    .realName-p {
+        font-size: 19px;
+    }
+
+    .profile-hr {
+        width: 300px;
+    }
+
+    .about-me-p {
+        font-size: 13px;
+    }
+
+    .description-p {
+        width: 300px;
+        font-size: 13px;
+    }
+
+    .date-p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .profile-div {
+        width: 320px;
+    }
+
+    .banner-image {
+        width: 320px;
+    }
+
+    .profile-picture-image {
+        left: 108px;
+    }
+
+    .profile-bottom-section {
+        width: 270px;
+    }
+
+    .nick-p {
+        font-size: 18px;
+    }
+
+    .realName-p {
+        font-size: 18px;
+    }
+
+    .profile-hr {
+        width: 270px;
+    }
+
+    .about-me-p {
+        font-size: 12px;
+    }
+
+    .description-p {
+        width: 270px;
+        font-size: 12px;
+    }
+
+    .date-p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:340px) {
+    .profile-div {
+        width: 300px;
+    }
+
+    .banner-image {
+        width: 300px;
+    }
+
+    .profile-picture-image {
+        left: 98px;
+    }
+
+    .profile-bottom-section {
+        width: 250px;
+    }
+
+    .nick-p {
+        font-size: 17px;
+    }
+
+    .realName-p {
+        font-size: 17px;
+    }
+
+    .profile-hr {
+        width: 250px;
+    }
+
+    .about-me-p {
+        font-size: 11px;
+    }
+
+    .description-p {
+        width: 250px;
+        font-size: 11px;
+    }
+
+    .date-p {
+        font-size: 11px;
+    }
+}

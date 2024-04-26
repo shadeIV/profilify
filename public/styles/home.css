@@ -85,7 +85,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    position: relative;
+    padding: 20px 20px 60px 20px;
     gap: 10px;
     border-radius: 5px;
     border: white solid 1px;
@@ -94,6 +95,14 @@ body {
 
 .profile-div:hover {
     background-color: #0e0e0e;
+}
+
+.view-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
 }
 
 .profile-image {
@@ -107,8 +116,24 @@ body {
 }
 
 .profile-name {
+    width: 130px;
+    text-align: center;
     color: white;
-    font-size: 22px;
+    font-size: 18px; 
+}
+
+.delete-profile-button {
+    position: absolute;
+    bottom: 20px;
+    padding: 0px 10px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: solid 2px rgba(255, 37, 37, 0.836);
 }
 
 @media (max-width: 770px) {
@@ -131,8 +156,8 @@ body {
 
     .profiles {
         width: 500px;
-        grid-template-columns: 150px 150px 150px;
-        column-gap: 25px;
+        grid-template-columns: 200px 200px;
+        column-gap: 100px;
     }
 }
 
@@ -157,8 +182,8 @@ body {
 
     .profiles {
         width: 400px;
-        grid-template-columns: 170px 170px;
-        column-gap: 60px;
+        grid-template-columns: 190px 190px;
+        column-gap: 10px;
     }
 }
 

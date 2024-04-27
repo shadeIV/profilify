@@ -13,7 +13,10 @@ function renderProfiles() {
             <img class="profile-image" src="${profile.profilePicture}">
             <p class="profile-name">${profile.profileName}</p>
         </a> 
-        <button data-profile-id="${profile.profileId}" class="delete-profile-button">Delete Profile</button>
+        <div class="profile-buttons-div">
+            <a class="edit-profile" href="/edit/${profile.profileId}">Edit Profile</a>
+            <button data-profile-id="${profile.profileId}" class="delete-profile-button">Delete Profile</button> 
+        </div>
     </div>
     `;
     });

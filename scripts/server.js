@@ -35,6 +35,11 @@ app.get("/view/:profileId", (req, res) => {
     res.render("view.ejs");
 });
 
+// Edit Route
+app.get("/edit/:profileId", (req, res) => {
+    res.render("edit.ejs");
+});
+
 // Create Route
 app.get("/create", (req, res) => {
     res.render("create.ejs");

@@ -1,0 +1,318 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+}
+
+.create-section-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    width: 550px;
+    margin-top: 80px;
+    border-radius: 6px;
+    background-color: #0e0e0e;
+}
+
+.profile-name-input {
+    margin-top: 10px;
+    width: 500px;
+    height: 40px;
+    font-size: 33px;
+    background-color: transparent;
+    color: white;
+}
+
+.error-p {
+    color: red;
+    font-size: 13px;
+    width: 500px;
+    text-align: left;
+}
+
+.profile-name-input::placeholder {
+    color: white;
+}
+
+.create-section-hr {
+    width: 500px;
+    height: 1px;
+    background-color: rgb(53, 53, 53);
+}
+
+.profile-input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+    width: 500px;
+}
+
+.input-name-p {
+    margin-left: 2px;
+    color: white;
+    font-size: 16px;
+}
+
+.profile-banner-input,
+.profile-picture-input {
+    padding: 0px 10px;
+    width: 478px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: black;
+    border: rgb(53, 53, 53) solid 1px;
+    color: white
+}
+
+.profile-nick-input,
+.profile-realname-input {
+    padding: 0px 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: black;
+    border: rgb(53, 53, 53) solid 1px;
+    color: white;
+}
+
+.profile-description-input {
+    padding: 10px;
+    width: 478px;
+    height: 200px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: black;
+    border: rgb(53, 53, 53) solid 1px;
+    color: white;
+    resize: none;
+}
+
+.color-pick-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.color-input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.color-input {
+    width: 150px;
+    height: 40px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.footer-buttons-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.home-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 10px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    border: solid 2px rgb(53, 53, 53);
+    text-decoration: none;
+}
+
+#back-icon {
+    font-size: 20px;
+}
+
+.submit-button {
+    padding: 0px 10px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: black;
+    border: solid 2px rgba(37, 255, 37, 0.836);
+}
+
+@media (max-width: 750px) {
+    .create-section-div {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 610px) {
+    body {
+        background-color: #0e0e0e;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .create-section-div {
+        padding: 20px 0px;
+        flex: 1;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .color-pick-section,
+    .footer-buttons-div {
+        width: 420px;
+    }
+
+    .error-p,
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input {
+        width: 398px;
+    }
+
+    .color-input {
+        width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .error-p,
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .color-pick-section,
+    .footer-buttons-div {
+        width: 390px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input {
+        width: 368px;
+    }
+
+    .color-input {
+        width: 120px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .error-p,
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .color-pick-section,
+    .footer-buttons-div {
+        width: 370px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input {
+        width: 348px;
+    }
+
+    .color-input {
+        width: 110px;
+    }
+
+}
+
+@media (max-width: 415px) {
+
+    .error-p,
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .color-pick-section,
+    .footer-buttons-div {
+        width: 350px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input {
+        width: 328px;
+    }
+
+    .color-pick-section {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .color-input {
+        width: 160px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .error-p,
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .color-pick-section,
+    .footer-buttons-div {
+        width: 330px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input {
+        width: 308px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .error-p,
+    .profile-name-input,
+    .create-section-hr,
+    .profile-input-div,
+    .color-pick-section,
+    .footer-buttons-div {
+        width: 310px;
+    }
+
+    .profile-banner-input,
+    .profile-picture-input,
+    .profile-description-input {
+        width: 288px;
+    }
+}

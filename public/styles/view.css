@@ -5,6 +5,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 30px;
 }
 
 .profile-div {
@@ -103,6 +104,26 @@ body {
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 25px;
+    background-color: #111214;
+    border-top: rgb(53, 53, 53) solid 1px;
+}
+
+.home-link {
+    color: white;
+    font-size: 14px;
 }
 
 @media (max-width: 420px) {

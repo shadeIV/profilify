@@ -4,6 +4,10 @@ import { storage, getStorage, saveToStorage } from "./storage.js";
 // Importing Extra Functions
 import { generateRandomId, getDate } from "./extra.js";
 
+
+// <----- Creation ----->
+
+
 // Submit Button
 const submitButton = document.querySelector(".submit-button");
 submitButton.addEventListener("click", () => {

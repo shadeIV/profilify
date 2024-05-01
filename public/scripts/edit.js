@@ -1,6 +1,7 @@
 // Importing Storage Functions
 import { storage, getStorage, saveToStorage } from "./storage.js";
 
+// Rendering The Page
 function loadThePage() {
     // Getting The Profile Name From The URL
     const url = window.location.href;
@@ -34,6 +35,7 @@ function loadThePage() {
 
 }
 
+// Saving The Profile
 document.querySelector(".submit-button").addEventListener("click", () => {
 
     const profileName = document.querySelector(".profile-name-input").value;

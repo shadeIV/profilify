@@ -1,6 +1,10 @@
 // Importing Storage Functions
 import { storage, getStorage, saveToStorage } from "./storage.js";
 
+
+// <----- Rendering ----->
+
+
 // Rendering Profiles
 function renderProfiles() {
     let htmlCode = "";
